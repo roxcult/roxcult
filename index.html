@@ -32,7 +32,7 @@
             color: #F7D1CD; /* Light pink color inspired by the sticker */
         }
 
-        /* Sticker image */
+        /* Sticker image with levitation animation */
         .sticker-img {
             width: 80%;
             max-width: 400px;
@@ -40,6 +40,7 @@
             margin-top: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            animation: levitate 3s ease-in-out infinite; /* Apply levitation animation */
         }
 
         /* Main text */
@@ -49,7 +50,6 @@
             color: #C2A1C0; /* Soft purple for text */
             margin: 20px 0;
         }
-
 
         /* Footer */
         footer {
@@ -64,6 +64,13 @@
         footer a:hover {
             color: #F7D1CD;
         }
+
+        /* Levitation animation */
+        @keyframes levitate {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); } /* Move up slightly */
+            100% { transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
@@ -72,7 +79,7 @@
     <div class="container">
         <h1>Rox Cult Saviors 中</h1>
         
-        <!-- Sticker image from server URL -->
+        <!-- Sticker image with levitation effect -->
         <img src="https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXQ9QVcJY8gulRcQljHQva9hZ-BARJnLANopLW9FA9v3_yGJTkU79jjwtOPkvWlZ-KAxWgBu8Zw07iZ9t2gjgay_UZrZmr1ddKQexh-Pw9600uIiQ" alt="Rox Sticker" class="sticker-img">
         
         <!-- Introduction text -->
